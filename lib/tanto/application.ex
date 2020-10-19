@@ -9,7 +9,7 @@ defmodule Tanto.Application do
   def start(_type, _args) do
     children = [
       # Starts a worker by calling: Tanto.Worker.start_link(arg)
-      # {Tanto.Worker, arg}
+      {Tanto.Repo, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
